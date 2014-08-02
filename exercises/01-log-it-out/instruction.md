@@ -17,4 +17,4 @@ result and then check its output in the console.
 ```
 
 Try this yourself. We are going to provide the location for the awesome
-`emotify` module in `process.argv[1]` and the String for the test in `process.argv[2]`.
+`emotify` module in `process.argv[2]` and the String for the test in `process.argv[3]`.
