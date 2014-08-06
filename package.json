@@ -29,7 +29,7 @@
   "dependencies": {
     "adventure": "^2.6.0",
     "adventure-verify": "^2.1.2",
-    "msee": "^0.1.1",
+    "cli-md": "^0.1.0",
     "tape": "^2.13.4",
     "workshopper-exercise": "^1.1.0"
   },

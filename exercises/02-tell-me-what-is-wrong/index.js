@@ -11,14 +11,14 @@ exports.solution = parse(path.join(__dirname, 'solution.md'))
 exports.verify = verify(function (args, t) {
   t.plan(2)
   var cmd = 'node ' + path.join(process.cwd(), args[0]) +
-   ' ' + path.join(__dirname, 'fail.js')
+   ' ' + path.join(__dirname, 'tests', 'fail.js')
   
   exec(cmd, function (err) {
     t.ok(err, 'wrong function not accepted')
   })
   
   var cmd = 'node ' + path.join(process.cwd(), args[0]) +
-   ' ' + path.join(__dirname, 'pass.js')
+   ' ' + path.join(__dirname, 'tests', 'pass.js')
    
   exec(cmd, function (err) {
     t.ok(!err, 'correct function accepted')

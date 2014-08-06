@@ -1,10 +1,6 @@
-var msee = require('msee')
-
-var mseeOptions = {
-  paragraphStart: '',
-  paragraphEnd: '\n\n'
-}
+var md = require('cli-md')
+var fs = require('fs')
 
 exports.parse = function (fileName) {
-  return msee.parseFile(fileName, mseeOptions)
+  return md(fs.readFileSync(fileName).toString())
 }

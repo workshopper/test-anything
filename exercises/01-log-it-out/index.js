@@ -11,7 +11,7 @@ exports.solution = parse(path.join(__dirname, 'solution.md'))
 
 exports.verify = function (args, pass) {
   var cmd = 'node ' + path.join(process.cwd(), args[0]) +
-   ' ' + path.join(__dirname, 'emotify.js') + 
+   ' ' + path.join(__dirname, 'tests', 'emotify.js') + 
    ' ' + '"testing like a pro"'
   
   var program = exec(cmd)

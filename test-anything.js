@@ -11,5 +11,7 @@ shop.add('TELL ME WHAT IS WRONG',
   function () { return require('./exercises/02-tell-me-what-is-wrong') })
 shop.add('TAPE IT TOGETHER',
   function () { return require('./exercises/03-tape-it-together') })
+shop.add('CALL ME MAYBE',
+  function() { return require('./exercises/04-call-me-maybe')})
 
 shop.execute(process.argv.slice(2))
