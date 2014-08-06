@@ -9,5 +9,7 @@ shop.add('LOG IT OUT',
   function () { return require('./exercises/01-log-it-out') })
 shop.add('TELL ME WHAT IS WRONG', 
   function () { return require('./exercises/02-tell-me-what-is-wrong') })
+shop.add('TAPE IT TOGETHER',
+  function () { return require('./exercises/03-tape-it-together') })
 
 shop.execute(process.argv.slice(2))
