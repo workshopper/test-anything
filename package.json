@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "Learn to test anything",
   "main": "index.js",
+  "bin": {
+    "test-anything": "./test-anything.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,6 +28,7 @@
   "homepage": "https://github.com/finnp/test-anything",
   "dependencies": {
     "adventure": "^2.6.0",
+    "msee": "^0.1.1",
     "tape": "^2.13.4",
     "workshopper-exercise": "^1.1.0"
   }
