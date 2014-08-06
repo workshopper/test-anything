@@ -7,5 +7,4 @@ For more information about nodeschool see here: http://nodeschool.io/
 
 ## Ideas:
 - Teach about the exit code about the test in exercise 2 or 3
-- Callbacks
 - Other frameworks than tape?

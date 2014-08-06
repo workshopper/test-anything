@@ -22,7 +22,7 @@ When we call this in the beginning we can tell `tape` how many assertions we are
   test('nextTick', function (t) {
     t.plan(1)
     process.nextTick(function () {
-      t.pass()
+      t.pass('callback called')
     })
   })
 ```
