@@ -32,5 +32,6 @@
     "msee": "^0.1.1",
     "tape": "^2.13.4",
     "workshopper-exercise": "^1.1.0"
-  }
+  },
+  "preferGloabal": true
 }
