@@ -1,5 +1,13 @@
-
 # Tell me what's wrong
+
+Write a passing assertion for the function `isCoolNumber`, that will assure that
+it returns `true` when passing `42` in it.
+
+The path of the module exporting the function will be provided through `process.argv[2]`.
+
+-----
+
+## Hints
 
 Well this was probably nothing new for you. But wait don't leave, we are going to 
 learn about some better ways to do this. 
@@ -17,9 +25,10 @@ Surely we could probably test each output with `!==` and warn if something is wr
 ```
 
 Now we get an error every time something is wrong, with the message what's not working.
-However in node there is a nice short-hand function for this called `assert`.
+However in node there is a nice build-in module for this called `assert`.
 
 ```js
+  var assert = require('assert')
   assert(add(2,1) === 3,'add(2,1) should be 3')
 ```
 
@@ -27,8 +36,6 @@ Or as an alternatively:
 ```js
   assert.equal(add(2,1), 3, 'add(2,1) should be 3')
 ```
-Write an assertion for the function....
 
-
-## Hints
-- Learn more about the assertions at the node documentation.
+## Resources
+- Node documentation: http://nodejs.org/api/assert.html
