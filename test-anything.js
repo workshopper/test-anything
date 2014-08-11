@@ -13,5 +13,7 @@ shop.add('TAPE IT TOGETHER',
   function () { return require('./exercises/03-tape-it-together') })
 shop.add('CALL ME MAYBE',
   function() { return require('./exercises/04-call-me-maybe')})
+shop.add('TO ERR IS HUMAN, TO PURR FELINE',
+  function () { return require('./exercises/05-to-err-is-human')})
 
 shop.execute(process.argv.slice(2))
