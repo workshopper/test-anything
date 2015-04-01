@@ -1,7 +1,7 @@
 {
   "name": "test-anything",
   "version": "0.2.0",
-  "description": "Learn to test anything",
+  "description": "Learn to test anything with TAP",
   "main": "index.js",
   "bin": {
     "test-anything": "./test-anything.js"

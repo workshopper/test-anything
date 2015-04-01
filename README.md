@@ -1,14 +1,11 @@
 # test-anything
 
-Install with `npm install test-anything -g` and run with `test-anything`.
-This nodeschool workshopper is a work in progress.
+[![NPM](https://nodei.co/npm/test-anything.png)](https://nodei.co/npm/test-anything/)
 
-For more information about nodeschool see here: http://nodeschool.io/
+**Learn to test anything with TAP.**
 
-## Ideas:
-- Teach about the exit code about the test in exercise 2 or 3
-- Other frameworks than tape (maybe optional bonus level)
-- travis-ci, appveyor (needs git-it knowledge)
-- pretty printer (faucet, etc.)
-- compare objects
-- subtests
+
+1. Install [Node.js](http://nodejs.org/)
+2. Run `sudo npm install test-anything -g`
+3. Run `test-anything`
+4. Select an exercise and go ahead :)

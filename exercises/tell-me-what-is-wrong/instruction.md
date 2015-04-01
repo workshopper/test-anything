@@ -32,9 +32,9 @@ However in node there is a nice build-in module for this called `assert`.
   assert(add(2,1) === 3,'add(2,1) should be 3')
 ```
 
-Or as an alternatively:
+Or as alternatively:
 ```js
-  assert.equal(add(2,1), 3, 'add(2,1) should be 3')
+  assert.deepEqual(add(2,1), 3, 'add(2,1) should be 3')
 ```
 
 ## Resources
