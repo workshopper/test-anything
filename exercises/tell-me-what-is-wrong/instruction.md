@@ -37,5 +37,18 @@ Or as alternatively:
   assert.deepEqual(add(2,1), 3, 'add(2,1) should be 3')
 ```
 
+Here are some functions you can use with assert. For a full list, see the 
+documentation.
+```js
+assert.ok(value, message) // tests if value is truthy
+assert.equal(actual, expected, message) // ==
+assert.notEqual(actual, expected, message) // !=
+assert.deepEqual(actual, expected, message) // for comparing objects
+assert.notDeepEqual(actual, expected, message)
+assert.strictEqual(actual, expected, message) // ==
+assert.notStrictEqual(actual, expected, message) // !==
+```
+
+
 ## Resources
 - Node documentation: http://nodejs.org/api/assert.html

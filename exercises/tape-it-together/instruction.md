@@ -24,8 +24,9 @@ friends.
 
 One module for testing that outputs `TAP` is `tape` (another one is `tap`, duh).
 It takes a description of what your are testing and a callback function, with a
-parameter that works quite similar to `assert`. However we also have to use it
-to tell `tape` when we are done with our tests.
+parameter `t` that works quite similar to `assert`. You use it to write your 
+assertions. However it also has a function `t.end()`, that you call when you are
+done with your assertions.
 
 Here is an example how to test the last function with `tape`
 
