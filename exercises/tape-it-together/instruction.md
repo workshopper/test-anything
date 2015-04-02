@@ -1,7 +1,7 @@
 # Tape it together
 
 Write tests that output `TAP`, that tests the following properties of a function
-`fancify`.
+`fancify`. The function will be provided in `process.argv[2]`.
 
 1 `fancify(str)` returns the `str` wrapped in `~*~`
   Example: `fancify('Hello')` returns `~*~Hello~*~`
