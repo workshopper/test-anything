@@ -1,6 +1,6 @@
 # Log it out
 
-Developing app's and modules is fun. However often you might be concerned whether things
+Developing apps and modules is fun. However often you might be concerned whether things
 work or when you add new features you want to be sure you did not break anything. 
 Therefore developers invented tests for their well-being. They allow you to automatically,
 well, test your application or module.
