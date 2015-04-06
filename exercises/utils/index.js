@@ -32,3 +32,20 @@ exports.execTest = function (dir, failFiles, passFile, args, t) {
     t.ok(!code, 'correct function accepted')
   })
 }
+
+exports.execRun = function (args, dirname) {
+  var out = ''
+  out += [
+    'Create your own module (`metatest.js`) to test your test.',
+    'Then run your code like this:',
+    '`node ' + args[0] + ' metatest.js`',
+    'The `metatest.js` file could look like this to pass your',
+    'tests:'
+  ].join('\n')
+  
+  out += '\n```js\n' + fs.readFileSync(path.join(dirname,'tests/pass.js'), 'utf-8')  + '\n```'
+  
+  out += '\nChange things in your `metatest.js` to make it fail your\ntests as well.'
+  
+  console.log(md(out))  
+}
