@@ -27,7 +27,7 @@ try {
   petDog('bordercollie')
 } 
 catch(err) {
-  console.error("It seems like he doesn't like that.")
+  console.error('It seems like it doesn\'t like that.')
 }
 ```
 
@@ -41,8 +41,17 @@ So maybe we know that a dachshund does not like to be petted. Well we could test
 this behavior like this:
 
 ```js
-t.throws(petDog('dachshund'))
+t.throws(function () {
+  petDog('dachshund')
+})
 ```
 
 Now the tests expects an error and throws an error if there is no error.
 Mind boggling, right?
+
+By the way, if you are familiar with functional javascript, you might already know, 
+that you could also write it in one line:
+```js
+t.throws(petDog.bind(null, 'dachhund'))
+```
+
