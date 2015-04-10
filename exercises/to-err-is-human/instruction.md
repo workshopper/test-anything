@@ -1,12 +1,12 @@
 # To err is human
 
-A function `feedCat` take sa kind of food as a String argument and returns `yum`
+A function `feedCat` takes any kind of food as a String argument and returns `yum`
 for everything you feed them. However if you try to feed the cat `chocolate`, the
 function will throw an error.
 
 Write a tests for this behavior, to be sure no kittens are harmed.
 
-The function will be provided through `process.arv[2]`.
+The function will be provided through `process.argv[2]`.
 
 ## Hints
 
