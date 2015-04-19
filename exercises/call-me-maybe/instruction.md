@@ -12,7 +12,7 @@ and node happens through callbacks and events. For this we often want to know:
 Was that callback called or not?
 
 The event-driven nature of JavaScript is also the reason why we had to call the 
-`t.end()` function in the last level. The test has to know wether we are done.
+`t.end()` function in the last level. The test has to know whether we are done.
 
 However there is maybe a better way to do this with callbacks using `t.plan(n)`.
 When we call this in the beginning we can tell `tape` how many assertions we are doing.
