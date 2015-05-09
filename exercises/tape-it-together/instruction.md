@@ -29,6 +29,9 @@ parameter `t` that works quite similar to `assert`. You use it to write your
 assertions. However it also has a function `t.end()`, that you call when you are
 done with your assertions.
 
+The `tape` module is not included in Node, so you need to install them in your
+project folder (where you keep your exercise files) with `npm install tape`.
+
 Here is an example how to test the last function with `tape`
 
 ```js
