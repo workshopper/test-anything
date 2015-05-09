@@ -48,7 +48,7 @@ assert.equal(actual, expected, message) // ==
 assert.notEqual(actual, expected, message) // !=
 assert.deepEqual(actual, expected, message) // for comparing objects
 assert.notDeepEqual(actual, expected, message)
-assert.strictEqual(actual, expected, message) // ==
+assert.strictEqual(actual, expected, message) // ===
 assert.notStrictEqual(actual, expected, message) // !==
 ```
 
