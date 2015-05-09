@@ -38,7 +38,7 @@ exports.execRun = function (args, dirname) {
   out += [
     'Create your own module (`metatest.js`) to test your test.',
     'Then run your code like this:',
-    '`node ' + args[0] + ' metatest.js`',
+    '`node ' + args[0] + ' ./metatest.js`',
     'The `metatest.js` file could look like this to pass your',
     'tests:'
   ].join('\n')
