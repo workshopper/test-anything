@@ -18,7 +18,7 @@ If your functions are going to be more complex it is going to be harder and
 harder to actually read the output. You have to know what output is expected for
 every input and for different functions.
 
-So it would be better if our tests only told us about weather something works or
+So it would be better if our tests only told us about whether something works or
 not. Surely we could probably test each output with `!==` and warn if something
 is wrong like this.
 
