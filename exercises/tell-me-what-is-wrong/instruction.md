@@ -27,7 +27,7 @@ is wrong like this.
 ```
 
 Now we get an error every time something is wrong, with the message what's not
-working. However in node there is a nice build-in module for this called
+working. However in node there is a nice built-in module for this called
 `assert`.
 
 ```js
