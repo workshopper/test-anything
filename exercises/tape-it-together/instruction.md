@@ -1,5 +1,3 @@
-# Tape it together
-
 Write tests that output `TAP`, that tests the following properties of a function
 `fancify`. The function will be provided in `process.argv[2]`.
 
@@ -10,6 +8,7 @@ Write tests that output `TAP`, that tests the following properties of a function
 3 It takes a third optional argument, that determines the character in the middle
   Example: `fancify('Hello', false, '!')` returns `~!~Hello~!~`
 
+---
 ## Hints
 
 Testing with `assert` still has some downsides. Even though we don't have to
@@ -44,3 +43,5 @@ Here is an example how to test the last function with `tape`
 
 * TAP on Wikipedia http://en.wikipedia.org/wiki/Test_Anything_Protocol
 * The tape module https://www.npmjs.org/package/tape
+
+---
