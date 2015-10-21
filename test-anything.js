@@ -1,19 +1,29 @@
 #!/usr/bin/env node
 
-var adventure = require('workshopper-adventure/adventure');
+var adventure = require('workshopper-adventure');
 var path = require('path')
 
 var shop = adventure({
-  name: 'test-anything',
   appDir: __dirname,
-  languages: ['en']
+  languages: ['en', 'ja']
+
 })
 
 var problems = require('./menu.json');
-
 problems.forEach(function(problem) {
   var p = problem.toLowerCase().replace(/,/g, '').replace(/\s/g, '-')
-  shop.add(problem, function () {return require(path.join(__dirname, 'exercises', p))})
+  shop.add(problem, function () {
+    var folder = path.join(__dirname, 'exercises', p)
+    var exercise = require(folder)
+    exercise.problem  = {file: [
+      path.join(folder, 'instruction.{lang}.md'),
+      path.join(folder, 'instruction.md')
+    ]}
+    exercise.solution = { file: [
+      path.join(folder, 'solution.{lang}.md'),
+      path.join(folder, 'solution.md')
+    ]} 
+    return exercise
+  })
 })
-
 shop.execute(process.argv.slice(2))
