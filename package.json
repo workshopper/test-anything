@@ -4,7 +4,7 @@
   "description": "Learn to test anything with TAP",
   "main": "index.js",
   "bin": {
-    "test-anything": "./test-anything.js"
+    "test-anything": "./bin/test-anything"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,12 +27,11 @@
   },
   "homepage": "https://github.com/finnp/test-anything",
   "dependencies": {
-    "cli-md": "^1.0.0",
     "concat-stream": "^1.4.7",
     "tap-colorize": "^1.2.0",
     "tap-parser": "^1.0.4",
     "tape": "^2.13.4",
-    "workshopper-adventure": "^3.4.1",
+    "workshopper-adventure": "^4.0.2",
     "workshopper-exercise": "^1.1.0"
   },
   "preferGloabal": true

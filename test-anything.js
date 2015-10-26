@@ -1,19 +1,31 @@
-#!/usr/bin/env node
-
-var adventure = require('workshopper-adventure/adventure');
-var path = require('path')
-
-var shop = adventure({
-  name: 'test-anything',
-  appDir: __dirname,
-  languages: ['en']
+const testAnything = require('workshopper-adventure')({
+    appDir: __dirname
+  , languages: ['en', 'ja']
+  , header: require('workshopper-adventure/default/header')
+  , footer: require('workshopper-adventure/default/footer')
 })
 
-var problems = require('./menu.json');
+testAnything.addAll(
+  require('./menu.json').map(function(problem) {
+    var p = problem.toLowerCase().replace(/,/g, '').replace(/\s/g, '-')
+    return {
+        name: problem
+      , fn: function () {
+          var path = require('path')
+          var folder = path.join(__dirname, 'exercises', p)
+          var exercise = require(folder)
+          exercise.problem  = {file: [
+            path.join(folder, 'instruction.{lang}.md'),
+            path.join(folder, 'instruction.md')
+          ]}
+          exercise.solution = { file: [
+            path.join(folder, 'solution.{lang}.md'),
+            path.join(folder, 'solution.md')
+          ]} 
+          return exercise
+        }
+    }
+  })
+)
 
-problems.forEach(function(problem) {
-  var p = problem.toLowerCase().replace(/,/g, '').replace(/\s/g, '-')
-  shop.add(problem, function () {return require(path.join(__dirname, 'exercises', p))})
-})
-
-shop.execute(process.argv.slice(2))
+module.exports = testAnything
