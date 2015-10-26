@@ -5,7 +5,7 @@ var verify = require('adventure-verify')
 
 
 exports.run = function (args) {
-  run(args, 'running your module')
+  run(args, 'running your module').pipe(process.stdout)
 }
 
 exports.verify = verify(function (args, t) {
@@ -19,9 +19,8 @@ exports.verify = verify(function (args, t) {
 })
 
 function run(args, string) {
-  var opts = [ path.join(__dirname, 'tests', 'emotify.js'), string]
-  var program = fork(path.join(process.cwd(), args[0]), opts , {
-    stdio: 'pipe',
+  var opts = [path.join(__dirname, 'tests', 'emotify.js'), string]
+  var program = fork(path.join(process.cwd(), args[0]), opts, {
     silent: true
   })
   return program.stdout
