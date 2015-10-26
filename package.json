@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/finnp/test-anything",
   "dependencies": {
+    "adventure-verify": "^2.2.0",
     "concat-stream": "^1.4.7",
     "tap-colorize": "^1.2.0",
     "tap-parser": "^1.0.4",

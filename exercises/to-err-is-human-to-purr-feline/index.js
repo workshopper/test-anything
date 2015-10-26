@@ -1,6 +1,6 @@
 var execTest = require('../utils').execTest
 var execRun = require('../utils').execRun
-var verify = require('../../verify')
+var verify = require('adventure-verify')
 
 exports.verify = verify(execTest.bind(
   this, __dirname, ['fail.js', 'fail2.js'], 'pass.js'

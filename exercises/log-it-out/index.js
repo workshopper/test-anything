@@ -1,7 +1,7 @@
 var path = require('path')
 var fork = require('child_process').fork
 var concat = require('concat-stream')
-var verify = require('../../verify')
+var verify = require('adventure-verify')
 
 var messages;
 

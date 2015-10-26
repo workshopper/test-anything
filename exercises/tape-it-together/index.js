@@ -1,4 +1,4 @@
-var verify = require('../../verify')
+var verify = require('adventure-verify')
 var execTest = require('../utils').execTest
 var execRun = require('../utils').execRun
 var path = require('path')
