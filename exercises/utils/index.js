@@ -1,6 +1,7 @@
 var fs = require('fs')
 var fork = require('child_process').fork
 var path = require('path')
+var md = require('cli-md');
 
 exports.execTest = function (dir, failFiles, passFile, args, t) {
   
@@ -33,7 +34,7 @@ exports.execRun = function (args, dirname) {
   out += [
     'Create your own module (`metatest.js`) to test your test.',
     'Then run your code like this:',
-    '`node ' + args[0] + ' metatest.js`',
+    '`node ' + args[0] + ' ./metatest.js`',
     'The `metatest.js` file could look like this to pass your',
     'tests:'
   ].join('\n')

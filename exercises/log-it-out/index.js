@@ -3,10 +3,9 @@ var fork = require('child_process').fork
 var concat = require('concat-stream')
 var verify = require('adventure-verify')
 
-var messages;
 
 exports.run = function (args) {
-  run(args, messages[0]).pipe(process.stdout)
+  run(args, 'running your module')
 }
 
 exports.verify = verify(function (args, t) {
@@ -21,6 +20,9 @@ exports.verify = verify(function (args, t) {
 
 function run(args, string) {
   var opts = [ path.join(__dirname, 'tests', 'emotify.js'), string]
-  var program = fork(path.join(process.cwd(), args[0]), opts ,{silent: true})
+  var program = fork(path.join(process.cwd(), args[0]), opts , {
+    stdio: 'pipe',
+    silent: true
+  })
   return program.stdout
 }
