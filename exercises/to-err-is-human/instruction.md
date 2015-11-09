@@ -34,7 +34,7 @@ catch(err) {
 When we test things, we often say that we want to make sure that there are no
 errors. Well, that is not entirely true. We certainly want not to have errors in
 our code. However if someone else tries to something weird with our functions,
-it still might be good to see an errors. So good that we might want to test this
+it still might be good to see an error. So good that we might want to test this
 behavior, e.g. to make sure there is no chocolate fed to cats.
 
 So maybe we know that a dachshund does not like to be petted. Well we could test 
