@@ -24,7 +24,7 @@ There is a standard for outputting data from tests called `TAP`, the
 robotic friends.
 
 One module for testing that outputs `TAP` is `tape` (another one is `tap`, duh).
-It takes a description of what your are testing and a callback function, with a
+It takes a description of what you are testing and a callback function, with a
 parameter `t` that works quite similar to `assert`. You use it to write your 
 assertions. However it also has a function `t.end()`, that you call when you are
 done with your assertions.
