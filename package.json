@@ -7,7 +7,7 @@
     "test-anything": "./test-anything.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard"
   },
   "repository": {
     "type": "git",
@@ -34,5 +34,8 @@
     "tape": "^4.0.0",
     "workshopper-exercise": "^2.3.0"
   },
-  "preferGlobal": true
+  "preferGlobal": true,
+  "devDependencies": {
+    "standard": "^8.5.0"
+  }
 }

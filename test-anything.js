@@ -1,7 +1,6 @@
 #!/usr/bin/env node --no-deprecation
 
 var adventure = require('adventure')
-var path = require('path')
 
 var shop = adventure({
   title: 'TEST ANYTHING!',
@@ -15,8 +14,8 @@ shop.add('» TELL ME WHAT IS WRONG',
 shop.add('» TAPE IT TOGETHER',
   function () { return require('./exercises/tape-it-together') })
 shop.add('» CALL ME MAYBE',
-  function() { return require('./exercises/call-me-maybe')})
+  function () { return require('./exercises/call-me-maybe') })
 shop.add('» TO ERR IS HUMAN, TO PURR FELINE',
-  function () { return require('./exercises/to-err-is-human')})
+  function () { return require('./exercises/to-err-is-human') })
 
 shop.execute(process.argv.slice(2))

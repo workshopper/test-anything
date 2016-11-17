@@ -1,5 +1,5 @@
 module.exports = function (food) {
-  if(food === 'chocolate') {
+  if (food === 'chocolate') {
     throw new Error('No, chocolate is dangerous!')
   } else {
     return 'yum'
