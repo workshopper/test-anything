@@ -1,7 +1,7 @@
 # Call me maybe
 
 Write a test for a function `repeatCallback(n, cb)`, that calls the callback 
-`cb` exactly `n` times.
+`cb` exactly `n` times. `n` can be any number you want in your test code.
 
 As before the functions location will be provided through `process.argv[2]`.
 
