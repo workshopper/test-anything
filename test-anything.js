@@ -2,6 +2,8 @@
 
 var adventure = require('adventure')
 
+process.noDeprecation = true
+
 var shop = adventure({
   title: 'TEST ANYTHING!',
   name: 'test-anything'
