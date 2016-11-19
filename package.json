@@ -1,6 +1,6 @@
 {
   "name": "test-anything",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "Learn to test anything with TAP",
   "main": "index.js",
   "bin": {
