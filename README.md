@@ -1,3 +1,5 @@
+## This workshopper is deprecated. I recommend looking for a different resource to learn testing ☺️
+
 # test-anything
 
 [![NPM](https://nodei.co/npm/test-anything.png)](https://nodei.co/npm/test-anything/)
